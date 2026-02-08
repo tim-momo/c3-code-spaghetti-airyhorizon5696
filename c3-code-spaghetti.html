@@ -59,22 +59,30 @@
         top: 10px;
         right: 10px;
       }
-      .product-card_mini {
-        display: flex;
-        gap: 15px;
-      }
-   
-      .product-card_mini__title {
-        font-size: 14px;
-        color: var(--title-color);
-        margin: 0 0 8px 0;
-      }
-      .product-card_mini__description {
+        .product-card__description {
         font-size: 10px;
         color: var(--description-color);
         margin: 0 0 17px 0;
       }
-    
+
+      .product-card--mini {
+        display: flex;
+        gap: 15px;
+      }
+   /* petite carte*/
+      .product-card_mini .product-card__title {
+        font-size: 14px;
+        color: var(--title-color);
+        margin: 0 0 8px 0;
+      }
+
+      .product-card_mini__ .product-card__description{
+        font-size: 14px;
+        color: var(--description-color);
+        margin: 0 0 15px 0;
+        line-height: 1.6;
+      }
+    /* fin petite carte */      
 
       .product-card {
         width: 300px;
@@ -92,13 +100,6 @@
         border-radius: 4px;
       }
      
-      .product-card_mini__description{
-        font-size: 14px;
-        color: var(--description-color);
-        margin: 0 0 15px 0;
-        line-height: 1.6;
-      }
-      
       .product-card__button:hover {
         background: #2980b9;
       }
@@ -119,7 +120,7 @@
       <button class="product-card__button">Ajouter au panier</button>
     </div>
 
-    <div class="product-card product-card_mini">
+    <div class="product-card product-card--mini">
       <img
         class="product-card__image"
         src="https://static.photos/technology/100x100/130"
